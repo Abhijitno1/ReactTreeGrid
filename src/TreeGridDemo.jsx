@@ -1,7 +1,7 @@
 ﻿import { useState } from 'react';
-import './assets/App.css';
-//import GridTree from 'react-gridtree';
-import GridTree from './GridTree.jsx';
+import GridTree from '@abhijitno1/react-tree-grid';
+//import GridTree from './GridTree.jsx';
+import '@abhijitno1/react-tree-grid/dist/react-tree-grid.css'
 
 export function TreeGridDemo() {
 	var [data, setData] = useState([]);
