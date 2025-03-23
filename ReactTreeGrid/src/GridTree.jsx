@@ -1,6 +1,6 @@
 import { Component } from 'react';
 import './assets/GridTree.css';
-import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap-icons/font/bootstrap-icons.min.css';
 import Header from './Header.jsx'
 import Body from './Body.jsx'
@@ -9,9 +9,13 @@ class GridTree extends Component {
     headers = [];
     colWidths = [];
     colNames = [];
+    gridClass = 'table table-striped table-hover';
 
     constructor(props) {
         super()
+
+        if (props.gridClass != null)
+            this.gridClass = props.gridClass;
 
         var fields = props.options.fields;
         var count = fields.length;
@@ -26,8 +30,8 @@ class GridTree extends Component {
     render() {
         return (
           <div>
-            <table className="table table-striped table-hover">
-                    <Header items={this.headers} columnsWidth={this.colWidths}/>
+                <table className={this.gridClass}>
+                    <Header items={this.headers} columnsWidth={this.colWidths} headerClass={this.props.options.headerClass} />
                     <Body fields={this.colNames} data={this.props.data} /> 
             </table>
           </div>

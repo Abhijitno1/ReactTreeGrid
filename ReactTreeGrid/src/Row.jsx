@@ -9,7 +9,7 @@ class Row extends React.Component {
     constructor(props) {
         super(props)
         this.getExpandIcon = this.getExpandIcon.bind(this)
-        console.log('fields list is ', props.fields);
+        //console.log('fields list is ', props.fields);
     }
 
     getExpandIcon(data, clickHandler) {

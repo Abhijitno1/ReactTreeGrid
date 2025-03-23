@@ -10,12 +10,13 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@abhijitno1/react-tree-grid": "^1.0.0",
+    "@syncfusion/ej2-react-treegrid": "^28.2.6",
     "bootstrap": "^5.3.3",
     "bootstrap-icons": "^1.11.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "uuid": "^11.1.0",
-    "@abhijitno1/react-tree-grid": "^1.0.0"
+    "uuid": "^11.1.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.19.0",

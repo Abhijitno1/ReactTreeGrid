@@ -1,17 +1,13 @@
 {
     "name": "@abhijitno1/react-tree-grid",
     "version": "1.0.0",
+    "description": "Enhanced version of Phill Beck's ReactJS TreeGrid component as a NPM Package. Can be bound dynamically. Makes use of Bootstrap styling",
     "type": "module",
     "files": [
         "dist"
     ],
-    "main": "./dist/react-tree-grid.umd.cjs",
-    "module": "./dist/react-tree-grid.js",
+    "main": "./dist/react-tree-grid.js",
     "exports": {
-        ".": {
-            "import": "./dist/react-tree-grid.js",
-            "require": "./dist/react-tree-grid.umd.cjs"
-        },
         "./dist/react-tree-grid.css": {
             "import": "./dist/react-tree-grid.css",
             "require": "./dist/react-tree-grid.css"
@@ -39,5 +35,8 @@
         "eslint-plugin-react-refresh": "^0.4.18",
         "globals": "^15.14.0",
         "vite": "^6.1.0"
-    }
+    },
+    "keywords": [ "ReactJS", "TreeGrid" ],
+    "author": "Abhijit Desai",
+    "license": "ISC"
 }
